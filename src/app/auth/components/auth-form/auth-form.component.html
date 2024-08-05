@@ -1,0 +1,21 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <h3>Login</h3>
+
+  <div class="input-container">
+    <div>
+      <label>Email</label>
+      <input
+        type="text"
+        placeholder="username@gmail.com"
+        formControlName="email"
+      />
+    </div>
+
+    <div>
+      <label>Password</label>
+      <input type="text" placeholder="Password" formControlName="password" />
+    </div>
+  </div>
+
+  <button type="submit">Sign in</button>
+</form>
